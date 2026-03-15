@@ -54,7 +54,6 @@ export default function ApplicationForm() {
         <form
           name="aplicacao-jornada-r1"
           method="POST"
-          data-netlify="true"
           onSubmit={(e) => {
             e.preventDefault();
             const form = e.target as HTMLFormElement;
