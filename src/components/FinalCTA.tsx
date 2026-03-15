@@ -14,14 +14,13 @@ export default function FinalCTA() {
           uma rota clara, do começo ao fim?
         </p>
         <a
-          href="#planos"
-          className="inline-flex bg-[#E8630C] border border-[#E8630C] text-white text-xl font-semibold px-10 py-5 rounded-lg hover:bg-[#c9530a] transition-colors"
+          href="https://wa.me/558597115137?text=Quero%20conhecer%20a%20jornada%20do%20R1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 bg-[#E8630C] border border-[#E8630C] text-white text-xl font-semibold px-10 py-5 rounded-lg hover:bg-[#c9530a] transition-colors"
         >
-          Quero entrar na Jornada do R1
+          Falar no WhatsApp
         </a>
-        <p className="text-[#7A7A7A] text-sm mt-4">
-          7 dias de garantia incondicional
-        </p>
       </div>
     </section>
   );

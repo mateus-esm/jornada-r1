@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Metodologia", href: "#metodologia" },
   { label: "Mentor", href: "#mentor" },
   { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Planos", href: "#planos" },
+  { label: "Aplicação", href: "#aplicacao" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -22,7 +22,7 @@ export default function Navbar() {
           Vagas limitadas para a próxima turma da Jornada do R1
         </span>
         <a
-          href="#planos"
+          href="#aplicacao"
           className="text-white text-sm font-semibold border border-[#FF5319] rounded-lg px-4 py-2 hover:bg-[rgba(255,83,25,0.15)] transition-colors"
         >
           Garantir minha vaga
@@ -49,7 +49,7 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#planos"
+          href="#aplicacao"
           className="hidden md:inline-flex bg-[#E8630C] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#c9530a] transition-colors"
         >
           Começar agora
@@ -92,7 +92,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#planos"
+            href="#aplicacao"
             onClick={() => setMenuOpen(false)}
             className="bg-[#E8630C] text-white text-base font-semibold px-5 py-3 rounded-lg text-center hover:bg-[#c9530a] transition-colors"
           >

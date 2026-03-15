@@ -5,10 +5,11 @@ import Procrastination from "@/components/Procrastination";
 import BottomOfFunnel from "@/components/BottomOfFunnel";
 import TurningPoint from "@/components/TurningPoint";
 import Authority from "@/components/Authority";
+import BeforeAfter from "@/components/BeforeAfter";
 import HowItWorks from "@/components/HowItWorks";
 import Methodology from "@/components/Methodology";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
+import ApplicationForm from "@/components/ApplicationForm";
 import FinalCTA from "@/components/FinalCTA";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -24,10 +25,11 @@ export default function Home() {
         <BottomOfFunnel />
         <TurningPoint />
         <Authority />
+        <BeforeAfter />
         <HowItWorks />
         <Methodology />
         <Testimonials />
-        <Pricing />
+        <ApplicationForm />
         <FinalCTA />
         <FAQ />
       </main>

@@ -27,7 +27,7 @@ export default function Footer() {
                 { label: "Metodologia", href: "#metodologia" },
                 { label: "O Mentor", href: "#mentor" },
                 { label: "Depoimentos", href: "#depoimentos" },
-                { label: "Planos", href: "#planos" },
+                { label: "Aplicação", href: "#aplicacao" },
                 { label: "FAQ", href: "#faq" },
               ].map((link) => (
                 <li key={link.href}>
