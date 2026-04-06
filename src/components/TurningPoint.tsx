@@ -35,8 +35,9 @@ export default function TurningPoint() {
           </span>
         </h2>
         <p className="text-[#B2B2B2] text-lg text-center max-w-[700px] mx-auto mb-14 leading-relaxed">
-          Mesmo antes da aprovação, algo já muda: você deixa de tentar passar e
-          passa a conduzir um processo de aprovação.
+          Mesmo antes da aprovação, algo já muda: você deixa de{" "}
+          <em>tentar passar</em> e passa a{" "}
+          <em>conduzir um processo de aprovação.</em>
         </p>
 
         <div className="grid md:grid-cols-2 gap-4 max-w-[900px] mx-auto">

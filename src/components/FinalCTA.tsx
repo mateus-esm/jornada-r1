@@ -6,20 +6,20 @@ export default function FinalCTA() {
           DECISÃO
         </p>
         <h2 className="text-white text-3xl md:text-[44px] font-medium leading-[1.15] mb-6">
-          Se você já decidiu que a residência é o caminho, a pergunta agora é
-          simples:
+          Se você já decidiu que a residência médica é o melhor caminho para
+          sua carreira, a pergunta agora é simples:
         </h2>
         <p className="text-[#B2B2B2] text-xl leading-relaxed mb-10">
-          Você vai continuar tentando ajustar isso sozinho ou vai caminhar com
-          uma rota clara, do começo ao fim?
+          Você vai continuar tentando ajustar isso sozinho ou vai seguir uma
+          rota clara, do começo ao fim?
         </p>
         <a
-          href="https://wa.me/558597115137?text=Quero%20conhecer%20a%20jornada%20do%20R1"
+          href="https://wa.me/558597115137?text=Quero%20entrar%20na%20Jornada%20do%20R1"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-[#E8630C] border border-[#E8630C] text-white text-xl font-semibold px-10 py-5 rounded-lg hover:bg-[#c9530a] transition-colors"
         >
-          Falar no WhatsApp
+          👉 Quero entrar na Jornada do R1
         </a>
       </div>
     </section>

@@ -39,8 +39,8 @@ export default function HowItWorks() {
           Como funciona na prática?
         </h2>
         <p className="text-[#B2B2B2] text-lg text-center max-w-[700px] mx-auto mb-14 leading-relaxed">
-          Nas próximas 12 semanas, você vai percorrer a Jornada do R1. Não é um
-          curso para assistir. É uma rota para seguir.
+          Não é um curso para assistir, nem encontros com anjos ou tutores.
+          É uma rota para seguir comigo — do diagnóstico até a aprovação.
         </p>
 
         {/* Timeline */}

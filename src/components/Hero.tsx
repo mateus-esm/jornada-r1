@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="text-[#E8630C]">do jeito certo.</span>
           </h1>
           <p className="text-white text-base font-medium mb-4">
-            Você reduziu plantões, investiu em cursos e separou tempo para
+            Você reduziu plantões, investiu em cursinho e separou tempo para
             estudar. Mesmo assim, o progresso não é claro — e o tempo continua
             passando em um mercado cada vez mais competitivo.
           </p>
@@ -65,8 +65,8 @@ export default function Hero() {
         <div className="relative flex items-end justify-center">
           <div className="relative w-full max-w-[480px]">
             <Image
-              src="/images/especialista.jpeg"
-              alt="Especialista — Mentor da Jornada do R1"
+              src="/images/george-arruda.jpeg"
+              alt="Dr. George Sales de Arruda — Mentor da Jornada do R1"
               width={480}
               height={640}
               className="w-full rounded-lg object-cover"
@@ -75,9 +75,8 @@ export default function Hero() {
             {/* Bio card overlay */}
             <div className="absolute bottom-4 left-4 right-4 bg-[rgba(0,0,0,0.82)] border border-[rgba(232,99,12,0.3)] rounded-lg p-4 backdrop-blur-sm">
               <p className="text-white text-sm leading-relaxed">
-                <strong>Aprovado em 2022</strong> em uma das especialidades mais
-                concorridas — Hospital Sírio-Libanês, IAMSPE, SUS-SP e Santa
-                Casa.
+                <strong>Aprovado em 2022</strong> em Anestesiologia — Hospital
+                Sírio-Libanês, IAMSPE, SUS-SP, Santa Casa e ENARE.
               </p>
             </div>
           </div>

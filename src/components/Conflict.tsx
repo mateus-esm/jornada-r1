@@ -11,22 +11,36 @@ export default function Conflict() {
             O seu problema não é falta de esforço.{" "}
             <span className="text-[#E8630C]">É falta de clareza.</span>
           </h2>
-          <p className="text-[#B2B2B2] text-lg leading-relaxed">
-            Você vive uma dualidade constante: quando reduz plantões, a renda
-            cai — e mesmo estudando mais, o desempenho não sobe como deveria.
-            Quando mantém ou aumenta os plantões, a culpa aparece — porque você
-            sente que está atrasando o projeto da residência.
+          <p className="text-[#B2B2B2] text-lg leading-relaxed mb-6">
+            Você vive uma dualidade constante:
+          </p>
+          <div className="space-y-4 mb-8">
+            <div className="bg-[rgba(232,99,12,0.06)] border-l-[3px] border-l-[#E8630C] pl-5 py-3 pr-4 rounded-r-lg">
+              <p className="text-white text-base leading-relaxed">
+                Se reduz os plantões, ganha mais tempo para estudar — mas a renda diminui e a insegurança financeira aumenta.
+              </p>
+            </div>
+            <div className="bg-[rgba(232,99,12,0.06)] border-l-[3px] border-l-[#E8630C] pl-5 py-3 pr-4 rounded-r-lg">
+              <p className="text-white text-base leading-relaxed">
+                Se mantém os plantões, a renda continua — mas o estudo perde consistência e a sensação é de estar ficando para trás.
+              </p>
+            </div>
+          </div>
+          <p className="text-[#B2B2B2] text-lg leading-relaxed italic">
+            E mesmo quando consegue estudar mais… o desempenho não sobe na mesma proporção.
           </p>
         </div>
 
         {/* Right — Checklist */}
         <div>
-          <ul className="space-y-0">
+          <p className="text-[#B2B2B2] text-base leading-relaxed mb-6">
+            E isso piora quando você começa a medir o resultado.
+          </p>
+          <ul className="space-y-0 mb-8">
             {[
-              "Quando reduz plantões, a renda cai — e o desempenho não sobe como deveria",
-              "Quando mantém os plantões, a culpa aparece — você sente que está atrasando",
-              "Você faz simulados e provas na íntegra, mas o resultado não sai como esperado",
-              "O mais frustrante não é errar — é não saber por que errou nem o que fazer depois",
+              "Você faz simulados. Faz provas na íntegra. E o resultado não vem como esperado.",
+              "O mais frustrante não é errar.",
+              "É não saber exatamente por que errou — nem o que fazer depois.",
             ].map((item, i) => (
               <li
                 key={i}

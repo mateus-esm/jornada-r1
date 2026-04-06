@@ -4,17 +4,22 @@ export default function Authority() {
   const timeline = [
     {
       year: "2021",
-      text: "Tentou a prova de residência sem método — e fracassou",
+      text: "Mesmo com cronograma, cursinho e muitas horas de estudo, não foi aprovado — foi ali que percebeu que o problema não era esforço, mas método.",
       highlight: false,
     },
     {
       year: "2022",
-      text: "Aprovado em uma das especialidades mais concorridas — Hospital Sírio-Libanês, IAMSPE, SUS-SP e Santa Casa",
+      text: "Reconstruiu completamente a forma de estudar, tratando a preparação como um processo de diagnóstico, correção e progressão estratégica.",
+      highlight: false,
+    },
+    {
+      year: "2022",
+      text: "Aprovado em Anestesiologia — Hospital Sírio-Libanês, IAMSPE, SUS-SP, Santa Casa de São Paulo e ENARE (ENAMED).",
       highlight: true,
     },
     {
       year: "Hoje",
-      text: "Anos observando padrões: conversando com médicos que passavam e com médicos que não conseguiam aprovação",
+      text: "Acompanha médicos em diferentes momentos da preparação, identificando padrões claros entre quem avança e quem permanece travado no processo.",
       highlight: false,
     },
   ];
@@ -26,8 +31,8 @@ export default function Authority() {
         <div className="flex justify-center">
           <div className="relative w-full max-w-[400px]">
             <Image
-              src="/images/especialista.jpeg"
-              alt="Mentor da Jornada do R1"
+              src="/images/george-arruda.jpeg"
+              alt="Dr. George Sales de Arruda — Mentor da Jornada do R1"
               width={400}
               height={530}
               className="w-full rounded-xl object-cover"
@@ -35,7 +40,7 @@ export default function Authority() {
             <div className="absolute -bottom-4 -right-4 bg-[#E8630C] rounded-xl px-6 py-3">
               <p className="text-white text-sm font-bold">Aprovado em 2022</p>
               <p className="text-white text-xs opacity-80">
-                4 instituições de referência
+                5 instituições de referência
               </p>
             </div>
           </div>
@@ -47,11 +52,14 @@ export default function Authority() {
             O MENTOR
           </p>
           <h2 className="text-white text-3xl md:text-[40px] font-normal leading-[1.15] mb-6">
-            Eu sei disso porque eu já estive{" "}
-            <span className="text-[#E8630C]">exatamente aí.</span>
+            Eu sei como é estudar muito e ainda assim{" "}
+            <span className="text-[#E8630C]">não ser aprovado.</span>
           </h2>
-          <p className="text-[#B2B2B2] text-lg leading-relaxed mb-8">
-            O que eu ensino aqui não é opinião. É padrão observado.
+          <p className="text-[#B2B2B2] text-base leading-relaxed mb-8">
+            Porque já estive exatamente nesse lugar. Hoje, meu trabalho é ajudar
+            médicos a sair do estudo baseado em tentativa e esforço e entrar em um
+            sistema estruturado de preparação — com método, clareza e direção até
+            a aprovação na residência médica.
           </p>
 
           {/* Timeline */}

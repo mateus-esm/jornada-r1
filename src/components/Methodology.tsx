@@ -1,29 +1,24 @@
 export default function Methodology() {
-  const pillars = [
+  const steps = [
     {
-      icon: "🎯",
-      title: "Direcionamento Estratégico",
-      text: "Cada minuto de estudo é direcionado para os temas que realmente aparecem nas provas de residência da sua especialidade.",
+      letter: "D",
+      title: "Diagnóstico",
+      text: "Tudo começa entendendo exatamente onde você está. Quais são os gaps reais, o que já funciona e o que precisa mudar antes de qualquer passo.",
     },
     {
-      icon: "📊",
-      title: "Medição Contínua",
-      text: "Acompanhamento de desempenho com dados reais, não sensações. Você sabe exatamente onde está e para onde precisa ir.",
+      letter: "E",
+      title: "Estrutura",
+      text: "A partir do diagnóstico, você entra em um plano estruturado — com foco nos temas certos, na ordem certa, sem desperdício de tempo.",
     },
     {
-      icon: "🔄",
-      title: "Adaptação Constante",
-      text: "O plano se adapta ao seu progresso. Não existe fórmula fixa — existe método que evolui com você.",
+      letter: "R",
+      title: "Retenção",
+      text: "Sistema de revisão espaçada que garante que o que você estudou esteja disponível no momento da prova — não só no dia seguinte.",
     },
     {
-      icon: "🧠",
-      title: "Revisão Inteligente",
-      text: "Sistema de revisão espaçada otimizado para retenção de longo prazo. Você lembra o que estudou na hora da prova.",
-    },
-    {
-      icon: "🤝",
-      title: "Acompanhamento Humano",
-      text: "Não é só algoritmo. Tem um mentor real acompanhando cada passo, corrigindo desvios e ajustando a rota.",
+      letter: "P",
+      title: "Performance",
+      text: "Medição contínua do desempenho real com ajustes estratégicos. Você para de tomar decisões no escuro e passa a conduzir a preparação.",
     },
   ];
 
@@ -38,37 +33,62 @@ export default function Methodology() {
 
       <div className="relative max-w-[1200px] mx-auto">
         <p className="text-[#E8630C] text-lg md:text-2xl font-light tracking-[6px] mb-4 text-center">
-          METODOLOGIA
+          O MÉTODO
         </p>
         <h2 className="text-white text-3xl md:text-[48px] font-light leading-[1.15] mb-4 text-center max-w-[900px] mx-auto">
-          Acreditamos que a aprovação é{" "}
+          O problema da maioria dos médicos não é falta de conteúdo.{" "}
           <span className="text-[#E8630C] font-medium">
-            consequência do método.
+            É falta de um sistema.
           </span>
         </h2>
-        <p className="text-[#B2B2B2] text-lg text-center max-w-[600px] mx-auto mb-14 leading-relaxed">
-          5 pilares que sustentam a Jornada do R1
+        <p className="text-[#B2B2B2] text-lg text-center max-w-[600px] mx-auto mb-4 leading-relaxed">
+          Por isso, a Jornada do R1 segue o Método D.E.R.P.
+        </p>
+        <p className="text-[#E8630C] text-center text-xl font-semibold tracking-[4px] mb-14">
+          Diagnóstico → Estrutura → Retenção → Performance
         </p>
 
-        <div className="space-y-4 max-w-[800px] mx-auto">
-          {pillars.map((pillar, i) => (
+        <div className="grid md:grid-cols-2 gap-4 max-w-[900px] mx-auto mb-14">
+          {steps.map((step, i) => (
             <div
               key={i}
               className="bg-[rgba(20,20,20,0.8)] border-l-[3px] border-l-[#E8630C] rounded-r-lg p-6 backdrop-blur-sm flex items-start gap-4"
             >
-              <div className="w-12 h-12 rounded-full bg-[#E8630C] flex items-center justify-center text-xl shrink-0">
-                {pillar.icon}
+              <div className="w-12 h-12 rounded-full bg-[#E8630C] flex items-center justify-center text-white text-xl font-bold shrink-0">
+                {step.letter}
               </div>
               <div>
                 <h3 className="text-white text-lg font-bold mb-1">
-                  {pillar.title}
+                  {step.title}
                 </h3>
                 <p className="text-[#B2B2B2] text-sm leading-relaxed">
-                  {pillar.text}
+                  {step.text}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="max-w-[700px] mx-auto bg-[rgba(232,99,12,0.08)] border border-[rgba(232,99,12,0.2)] rounded-xl p-8">
+          <p className="text-[#E8630C] text-sm font-bold tracking-widest mb-3 text-center">
+            O QUE MUDA
+          </p>
+          <p className="text-white text-lg text-center mb-6">
+            Você deixa de estudar no escuro. E passa a:
+          </p>
+          <div className="space-y-3">
+            {[
+              "Entender sua evolução",
+              "Identificar gargalos com precisão",
+              "Ajustar sua estratégia com clareza",
+              "Manter consistência até a prova",
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3 text-[#B2B2B2] text-base">
+                <span className="text-[#E8630C] font-bold shrink-0">✓</span>
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
