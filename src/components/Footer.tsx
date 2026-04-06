@@ -80,7 +80,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span className="text-[#7A7A7A] text-xs">Powered by</span>
               <Image
-                src="/images/solo-ventures-logo.png"
+                public="/images/solo-ventures-logo.png"
                 alt="Solo Ventures"
                 width={120}
                 height={30}
