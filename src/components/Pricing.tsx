@@ -7,7 +7,7 @@ export default function Pricing() {
       disclaimer: "Acesso por 12 meses",
       features: [
         "Diagnóstico personalizado do seu momento",
-        "Plano de estudos estruturado por 12 semanas",
+        "Plano de estudos estruturado até o final de suas provas",
         "Acompanhamento semanal de desempenho",
         "Simulados com análise de resultado",
         "Grupo exclusivo de mentorados",

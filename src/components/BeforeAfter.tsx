@@ -12,27 +12,7 @@ export default function BeforeAfter() {
           <span className="text-[#E8630C]">conquista da vaga.</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-[900px] mx-auto">
-          {/* Antes */}
-          <div className="bg-[rgba(30,30,30,0.7)] border border-[#2a2a2a] rounded-xl overflow-hidden">
-            <div className="relative aspect-[4/3]">
-              <Image
-                src="/images/antes-estudando.jpeg"
-                alt="O início — horas de estudo sem método"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <span className="text-[#7A7A7A] text-xs font-bold tracking-[3px] uppercase">
-                O INÍCIO
-              </span>
-              <p className="text-white text-lg font-medium mt-2">
-                Horas de estudo sem método e a incerteza da aprovação.
-              </p>
-            </div>
-          </div>
-
+        <div className="max-w-[480px] mx-auto">
           {/* Depois */}
           <div className="bg-[rgba(30,30,30,0.7)] border border-[#E8630C] rounded-xl overflow-hidden">
             <div className="relative aspect-[4/3]">

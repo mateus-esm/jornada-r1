@@ -16,7 +16,7 @@ export default function HowItWorks() {
       number: "03",
       icon: "🔧",
       title: "Ajustes e Correções de Rota",
-      text: "Ao longo das 12 semanas, fazemos ajustes contínuos. Não existe plano perfeito no dia 1 — o que existe é um método que se adapta ao seu progresso.",
+      text: "Ao longo do acompanhamento, fazemos ajustes contínuos. Não existe plano perfeito no dia 1 — o que existe é um método que se adapta ao seu progresso.",
     },
     {
       number: "04",

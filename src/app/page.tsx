@@ -8,7 +8,6 @@ import Authority from "@/components/Authority";
 import BeforeAfter from "@/components/BeforeAfter";
 import HowItWorks from "@/components/HowItWorks";
 import Methodology from "@/components/Methodology";
-import Testimonials from "@/components/Testimonials";
 import ApplicationForm from "@/components/ApplicationForm";
 import FinalCTA from "@/components/FinalCTA";
 import FAQ from "@/components/FAQ";
@@ -28,7 +27,6 @@ export default function Home() {
         <BeforeAfter />
         <HowItWorks />
         <Methodology />
-        <Testimonials />
         <ApplicationForm />
         <FinalCTA />
         <FAQ />

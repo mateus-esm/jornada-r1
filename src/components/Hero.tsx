@@ -27,7 +27,7 @@ export default function Hero() {
           <ul className="space-y-3 mb-8">
             {[
               "Método claro de estudo para residência",
-              "Acompanhamento personalizado por 12 semanas",
+              "Acompanhamento personalizado até o final de suas provas",
               "Diagnóstico real do seu momento atual",
               "Correções de rota e ajustes contínuos",
             ].map((item) => (
@@ -76,7 +76,7 @@ export default function Hero() {
             <div className="absolute bottom-4 left-4 right-4 bg-[rgba(0,0,0,0.82)] border border-[rgba(232,99,12,0.3)] rounded-lg p-4 backdrop-blur-sm">
               <p className="text-white text-sm leading-relaxed">
                 <strong>Aprovado em 2022</strong> em Anestesiologia — Hospital
-                Sírio-Libanês, IAMSPE, SUS-SP, Santa Casa e ENARE.
+                Sírio-Libanês, IAMSPE, SUS-SP, Santa Casa de São Paulo e ENARE.
               </p>
             </div>
           </div>

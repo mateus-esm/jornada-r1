@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "Quanto tempo dura a mentoria?",
     answer:
-      "A Jornada do R1 dura 12 semanas, com acompanhamento contínuo, diagnósticos, ajustes de rota e suporte. O acesso à plataforma permanece por 12 meses.",
+      "A Jornada do R1 tem acompanhamento contínuo até o final de suas provas, com diagnósticos, ajustes de rota e suporte.",
   },
   {
     question: "É um curso com videoaulas?",
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Como funciona o acompanhamento?",
     answer:
-      "Tudo começa com um diagnóstico real do seu momento. A partir dele, montamos um plano de estudos personalizado. Ao longo das 12 semanas, fazemos ajustes contínuos baseados nos seus resultados de simulados e métricas de progresso.",
+      "Tudo começa com um diagnóstico real do seu momento. A partir dele, montamos um plano de estudos personalizado. Ao longo do acompanhamento, fazemos ajustes contínuos baseados nos seus resultados de simulados e métricas de progresso.",
   },
   {
     question: "Vocês garantem aprovação?",
