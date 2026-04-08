@@ -29,14 +29,16 @@ export default function Authority() {
       <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* Image */}
         <div className="flex justify-center">
-          <div className="relative w-full max-w-[400px]">
-            <Image
-              src="/images/depois-formatura.jpeg"
-              alt="Dr. George Sales de Arruda — Formatura no Hospital Sírio-Libanês"
-              width={400}
-              height={530}
-              className="w-full rounded-xl object-cover"
-            />
+          <div className="relative w-full max-w-[520px]">
+            <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/depois-formatura.jpeg"
+                alt="Dr. George Sales de Arruda — Formatura no Hospital Sírio-Libanês"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 520px"
+              />
+            </div>
             <div className="absolute -bottom-4 -right-4 bg-[#E8630C] rounded-xl px-6 py-3">
               <p className="text-white text-sm font-bold">Aprovado em 2022</p>
               <p className="text-white text-xs opacity-80">
