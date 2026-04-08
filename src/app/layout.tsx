@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jornada do R1 — Mentoria para Residência Médica",
+  title: "Jornada do R1 | Mentoria para Residência Médica",
   description:
     "Mentoria completa para aprovação na residência médica. Método, clareza e direção para você conquistar sua vaga.",
 };

@@ -3,10 +3,8 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "A Jornada", href: "#jornada" },
   { label: "Metodologia", href: "#metodologia" },
   { label: "Mentor", href: "#mentor" },
-  { label: "Depoimentos", href: "#depoimentos" },
   { label: "Aplicação", href: "#aplicacao" },
   { label: "FAQ", href: "#faq" },
 ];

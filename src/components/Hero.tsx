@@ -53,7 +53,7 @@ export default function Hero() {
               Quero entrar na Jornada do R1
             </a>
             <a
-              href="#jornada"
+              href="#metodologia"
               className="border border-[#E8630C] text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-[rgba(232,99,12,0.12)] transition-colors text-center"
             >
               Saiba mais

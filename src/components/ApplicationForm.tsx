@@ -18,7 +18,7 @@ export default function ApplicationForm() {
           </h2>
           <p className="text-[#7A7A7A] text-lg mb-8">
             Recebemos seus dados. Para agilizar o processo, fale diretamente com
-            nossa equipe no WhatsApp:
+            George Sales no WhatsApp:
           </p>
           <a
             href={whatsappLink}
@@ -30,7 +30,7 @@ export default function ApplicationForm() {
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
               <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.584-1.466A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.347 0-4.518-.809-6.243-2.16l-.436-.348-2.726.871.892-2.657-.379-.46A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
             </svg>
-            Falar no WhatsApp
+            Falar com George no WhatsApp
           </a>
         </div>
       </section>
@@ -52,24 +52,23 @@ export default function ApplicationForm() {
         </p>
 
         <form
-          name="aplicacao-jornada-r1"
-          method="POST"
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault();
             const form = e.target as HTMLFormElement;
             const formData = new FormData(form);
-            fetch("/", {
-              method: "POST",
-              headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
-            })
-              .then(() => setSubmitted(true))
-              .catch(() => setSubmitted(true));
+            const payload = Object.fromEntries(formData.entries());
+            try {
+              await fetch("http://72.61.219.156:5678/webhook/3880b715-f259-4740-9581-66dec7dda9a5", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+              });
+            } finally {
+              setSubmitted(true);
+            }
           }}
           className="space-y-5"
         >
-          <input type="hidden" name="form-name" value="aplicacao-jornada-r1" />
-
           {/* Nome */}
           <div>
             <label className="block text-[#333] text-sm font-semibold mb-1.5">
@@ -154,26 +153,43 @@ export default function ApplicationForm() {
                 <option value="">Selecione</option>
                 <option value="internato">Internato</option>
                 <option value="formado">Formado</option>
-                <option value="residencia-atual">Residência atual</option>
               </select>
             </div>
 
-            {/* Nível de preparação */}
+            {/* Carga Horária de Plantões */}
             <div>
               <label className="block text-[#333] text-sm font-semibold mb-1.5">
-                Nível de preparação
+                Carga horária de plantões/semana
               </label>
               <select
-                name="nivel"
+                name="carga_plantoes"
                 required
                 className="w-full border border-[rgba(29,29,29,0.15)] rounded-lg px-4 py-3 text-[#333] text-base focus:outline-none focus:border-[#E8630C] transition-colors bg-white"
               >
                 <option value="">Selecione</option>
-                <option value="iniciante">Iniciante</option>
-                <option value="intermediario">Intermediário</option>
-                <option value="avancado">Avançado</option>
+                <option value="0h-12h">0h – 12h</option>
+                <option value="12h-36h">12h – 36h</option>
+                <option value="36h-60h">36h – 60h</option>
+                <option value="60h+">60h ou mais</option>
               </select>
             </div>
+          </div>
+
+          {/* Nível de preparação */}
+          <div>
+            <label className="block text-[#333] text-sm font-semibold mb-1.5">
+              Nível de preparação atual
+            </label>
+            <select
+              name="nivel"
+              required
+              className="w-full border border-[rgba(29,29,29,0.15)] rounded-lg px-4 py-3 text-[#333] text-base focus:outline-none focus:border-[#E8630C] transition-colors bg-white"
+            >
+              <option value="">Selecione</option>
+              <option value="iniciando">Estou iniciando a preparação</option>
+              <option value="6-12meses">Em preparação há 6 a 12 meses</option>
+              <option value="mais-1ano">Em preparação há mais de 1 ano</option>
+            </select>
           </div>
 
           <button

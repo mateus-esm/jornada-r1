@@ -23,10 +23,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: "A Jornada", href: "#jornada" },
                 { label: "Metodologia", href: "#metodologia" },
                 { label: "O Mentor", href: "#mentor" },
-                { label: "Depoimentos", href: "#depoimentos" },
                 { label: "Aplicação", href: "#aplicacao" },
                 { label: "FAQ", href: "#faq" },
               ].map((link) => (
@@ -55,17 +53,18 @@ export default function Footer() {
 
             {/* Social icons */}
             <div className="flex gap-3 mt-6">
-              {["Instagram", "YouTube", "LinkedIn"].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-white text-sm hover:border-[#E8630C] hover:text-[#E8630C] transition-colors"
-                  aria-label={social}
-                >
-                  {social[0]}
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/georgesales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-white text-sm hover:border-[#E8630C] hover:text-[#E8630C] transition-colors"
+                aria-label="Instagram"
+                title="@georgesales"
+              >
+                I
+              </a>
             </div>
+            <p className="text-[#555] text-xs mt-2">@georgesales</p>
           </div>
         </div>
 

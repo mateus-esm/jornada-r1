@@ -4,12 +4,12 @@ export default function Authority() {
   const timeline = [
     {
       year: "2021",
-      text: "Mesmo com cronograma, cursinho e muitas horas de estudo, não foi aprovado — foi ali que percebeu que o problema não era esforço, mas método.",
+      text: "Mesmo com cronograma, cursinho e muitas horas de estudo, não fui aprovado — foi ali que percebi que o problema não era esforço, mas método.",
       highlight: false,
     },
     {
       year: "2022",
-      text: "Reconstruiu completamente a forma de estudar, tratando a preparação como um processo de diagnóstico, correção e progressão estratégica.",
+      text: "Reconstruí completamente a forma de estudar, tratando a preparação como um processo de diagnóstico, correção e progressão estratégica.",
       highlight: false,
     },
     {
@@ -19,7 +19,7 @@ export default function Authority() {
     },
     {
       year: "Hoje",
-      text: "Acompanha médicos em diferentes momentos da preparação, identificando padrões claros entre quem avança e quem permanece travado no processo.",
+      text: "Acompanho médicos em diferentes momentos da preparação, identificando padrões claros entre quem avança e quem permanece travado no processo.",
       highlight: false,
     },
   ];
@@ -31,8 +31,8 @@ export default function Authority() {
         <div className="flex justify-center">
           <div className="relative w-full max-w-[400px]">
             <Image
-              src="/images/george-arruda.jpeg"
-              alt="Dr. George Sales de Arruda — Mentor da Jornada do R1"
+              src="/images/depois-formatura.jpeg"
+              alt="Dr. George Sales de Arruda — Formatura no Hospital Sírio-Libanês"
               width={400}
               height={530}
               className="w-full rounded-xl object-cover"
@@ -51,10 +51,19 @@ export default function Authority() {
           <p className="text-[#E8630C] text-lg md:text-2xl font-light tracking-[6px] mb-4">
             O MENTOR
           </p>
-          <h2 className="text-white text-3xl md:text-[40px] font-normal leading-[1.15] mb-6">
+          <h2 className="text-white text-3xl md:text-[40px] font-normal leading-[1.15] mb-3">
             Eu sei como é estudar muito e ainda assim{" "}
             <span className="text-[#E8630C]">não ser aprovado.</span>
           </h2>
+
+          {/* Direct mentorship callout */}
+          <div className="flex items-center gap-3 bg-[rgba(232,99,12,0.10)] border border-[rgba(232,99,12,0.3)] rounded-lg px-4 py-3 mb-6">
+            <span className="text-[#E8630C] text-lg shrink-0">★</span>
+            <p className="text-white text-sm font-semibold">
+              A mentoria é conduzida diretamente por mim, George Sales — do diagnóstico até a sua aprovação.
+            </p>
+          </div>
+
           <p className="text-[#B2B2B2] text-base leading-relaxed mb-8">
             Porque já estive exatamente nesse lugar. Hoje, meu trabalho é ajudar
             médicos a sair do estudo baseado em tentativa e esforço e entrar em um

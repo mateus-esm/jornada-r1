@@ -5,8 +5,6 @@ import Procrastination from "@/components/Procrastination";
 import BottomOfFunnel from "@/components/BottomOfFunnel";
 import TurningPoint from "@/components/TurningPoint";
 import Authority from "@/components/Authority";
-import BeforeAfter from "@/components/BeforeAfter";
-import HowItWorks from "@/components/HowItWorks";
 import Methodology from "@/components/Methodology";
 import ApplicationForm from "@/components/ApplicationForm";
 import FinalCTA from "@/components/FinalCTA";
@@ -24,8 +22,6 @@ export default function Home() {
         <BottomOfFunnel />
         <TurningPoint />
         <Authority />
-        <BeforeAfter />
-        <HowItWorks />
         <Methodology />
         <ApplicationForm />
         <FinalCTA />
