@@ -2,6 +2,16 @@
 
 import { useState } from "react";
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
+function trackLead() {
+  window.fbq?.("track", "Lead");
+}
+
 export default function ApplicationForm() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -64,6 +74,7 @@ export default function ApplicationForm() {
                 body: JSON.stringify(payload),
               });
             } finally {
+              trackLead();
               setSubmitted(true);
             }
           }}
