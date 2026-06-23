@@ -52,6 +52,12 @@ export default function Procrastination() {
             avançando.&rdquo;
           </p>
         </div>
+        <a
+          href="#aplicacao"
+          className="inline-flex mt-8 bg-[#E8630C] border border-[#E8630C] text-white text-base font-semibold px-7 py-3.5 rounded-lg hover:bg-[#c9530a] transition-colors"
+        >
+          Aplicar para a mentoria
+        </a>
       </div>
     </section>
   );

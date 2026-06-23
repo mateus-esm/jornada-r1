@@ -14,9 +14,7 @@ export default function FinalCTA() {
           rota clara, do começo ao fim?
         </p>
         <a
-          href="https://wa.me/558597115137?text=Quero%20entrar%20na%20Jornada%20do%20R1"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#aplicacao"
           className="inline-flex items-center gap-3 bg-[#E8630C] border border-[#E8630C] text-white text-xl font-semibold px-10 py-5 rounded-lg hover:bg-[#c9530a] transition-colors"
         >
           👉 Quero entrar na Jornada do R1

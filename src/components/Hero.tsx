@@ -45,18 +45,16 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://wa.me/558597115137?text=Quero%20conhecer%20a%20jornada%20do%20R1"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#aplicacao"
               className="bg-[#E8630C] border border-[#E8630C] text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-[#c9530a] transition-colors text-center"
             >
               Quero entrar na Jornada do R1
             </a>
             <a
-              href="#metodologia"
+              href="#aplicacao"
               className="border border-[#E8630C] text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-[rgba(232,99,12,0.12)] transition-colors text-center"
             >
-              Saiba mais
+              Aplicar agora
             </a>
           </div>
         </div>

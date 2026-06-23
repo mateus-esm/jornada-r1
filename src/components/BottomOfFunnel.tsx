@@ -70,6 +70,12 @@ export default function BottomOfFunnel() {
           <p className="text-[#E8630C] text-xl font-semibold italic">
             &ldquo;Será que eu estou usando meu tempo do jeito certo?&rdquo;
           </p>
+          <a
+            href="#aplicacao"
+            className="inline-flex mt-8 bg-[#E8630C] border border-[#E8630C] text-white text-base font-semibold px-7 py-3.5 rounded-lg hover:bg-[#c9530a] transition-colors"
+          >
+            Descobrir minha rota
+          </a>
         </div>
       </div>
     </section>

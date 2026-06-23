@@ -99,6 +99,14 @@ export default function Methodology() {
             <strong>Mentoria 100% direta com George Sales.</strong> Você não fala com tutor, assistente ou equipe de suporte. Cada sessão, cada ajuste, cada decisão — comigo, do início ao fim.
           </p>
         </div>
+        <div className="text-center">
+          <a
+            href="#aplicacao"
+            className="inline-flex mt-8 bg-[#E8630C] border border-[#E8630C] text-white text-base font-semibold px-7 py-3.5 rounded-lg hover:bg-[#c9530a] transition-colors"
+          >
+            Aplicar para a Jornada do R1
+          </a>
+        </div>
       </div>
     </section>
   );

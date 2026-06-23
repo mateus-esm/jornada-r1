@@ -35,6 +35,12 @@ export default function TurningPoint() {
             </div>
           ))}
         </div>
+        <a
+          href="#aplicacao"
+          className="inline-flex mt-10 bg-[#E8630C] border border-[#E8630C] text-white text-base font-semibold px-7 py-3.5 rounded-lg hover:bg-[#c9530a] transition-colors"
+        >
+          Começar com método
+        </a>
       </div>
     </section>
   );
