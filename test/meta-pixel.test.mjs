@@ -5,6 +5,7 @@ import test from "node:test";
 test("loads Meta Pixel and tracks lead form submissions", () => {
   const layout = fs.readFileSync("src/app/layout.tsx", "utf8");
   const applicationForm = fs.readFileSync("src/components/ApplicationForm.tsx", "utf8");
+  const leadRoute = fs.readFileSync("src/app/api/leads/route.ts", "utf8");
   const thankYouPage = fs.readFileSync("src/app/obrigado/page.tsx", "utf8");
   const leadPixelTracker = fs.readFileSync("src/components/LeadPixelTracker.tsx", "utf8");
 
@@ -12,7 +13,9 @@ test("loads Meta Pixel and tracks lead form submissions", () => {
   assert.match(layout, /fbq\("init", "1179784960962795"\)/);
   assert.match(layout, /fbq\("track", "PageView"\)/);
   assert.match(layout, /facebook\.com\/tr\?id=1179784960962795&ev=PageView&noscript=1/);
-  assert.match(applicationForm, /3880b715-f259-4740-9581-66dec7dda9a5/);
+  assert.match(applicationForm, /fetch\("\/api\/leads"/);
+  assert.doesNotMatch(applicationForm, /72\.61\.219\.156|3880b715-f259-4740-9581-66dec7dda9a5/);
+  assert.match(leadRoute, /3880b715-f259-4740-9581-66dec7dda9a5/);
   assert.match(applicationForm, /router\.push\("\/obrigado"\)/);
   assert.match(thankYouPage, /LeadPixelTracker/);
   assert.match(leadPixelTracker, /fbq\??\.\("track", "Lead"\)/);

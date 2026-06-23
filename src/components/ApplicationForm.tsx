@@ -2,9 +2,6 @@
 
 import { useRouter } from "next/navigation";
 
-const WEBHOOK_URL =
-  "http://72.61.219.156:5678/webhook/3880b715-f259-4740-9581-66dec7dda9a5";
-
 export default function ApplicationForm() {
   const router = useRouter();
 
@@ -30,7 +27,7 @@ export default function ApplicationForm() {
             const payload = Object.fromEntries(formData.entries());
 
             try {
-              await fetch(WEBHOOK_URL, {
+              await fetch("/api/leads", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
